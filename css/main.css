@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FFEFE7;
+  color: #7C6A0A;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -45,6 +46,45 @@ nav .icons button svg path {
 
 main {
   width: 100%;
+}
+main h2 {
+  font-size: 4rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 65px 115px;
+}
+.hero .impact-section {
+  width: 45%;
+}
+.hero .impact-section h1 {
+  font-size: 5rem;
+  margin: 60px 0;
+}
+.hero .impact-section p {
+  font-size: 2.2rem;
+  margin-bottom: 100px;
+}
+.hero .impact-section button {
+  background: #FA9500;
+  color: white;
+  border: none;
+  width: 260px;
+  height: 75px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.3rem;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.hero .image-section {
+  width: 35%;
+}
+.hero .image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
 }
 
 footer {
