@@ -50,6 +50,11 @@ main {
     h2 {
         font-size: 4rem;
     }
+    > section {
+        padding: 0 70px;
+        width: 100%;
+        max-width: 1300px;
+    }
 }
 .hero {
     display: flex;
@@ -83,6 +88,44 @@ main {
             width: 100%;
             max-width: 500px;
             border-radius: 10px;
+        }
+    }
+}
+.product-section {
+    .healthcare{
+        .cards-container {
+            margin: 60px 0;
+            .card-item {
+                width: 30%;
+                min-width: 324px;
+                max-width: 400px;
+                background-color: $secundary-color;
+                border-radius: 8px;
+                .love-icon {
+                    display: flex;
+                    justify-content: end;
+                    svg {
+                        margin: 10px;
+                        width: 30px;
+                        path{stroke: $primary-text-color;}
+                    }
+                }
+                .card-info{
+                    padding: 0 40px 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        border-radius: 6px;
+                    }
+                    .card-description {
+                        margin-top: 12px;
+                        h4 {font-size: 2.5rem;}
+                        p {font-size: 1.6rem;}
+                    }
+                }
+            }
         }
     }
 }
