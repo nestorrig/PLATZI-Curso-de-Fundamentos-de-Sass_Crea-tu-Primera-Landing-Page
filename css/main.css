@@ -15,6 +15,9 @@ body {
   color: #7C6A0A;
   font-family: "IBM Plex Sans", sans-serif;
 }
+body svg path {
+  stroke: #7C6A0A;
+}
 
 nav {
   width: 100%;
@@ -24,7 +27,7 @@ nav {
   padding: 36px 60px 46px 85px;
 }
 nav p {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   color: #7C6A0A;
 }
 nav .icons {
@@ -34,52 +37,50 @@ nav .icons {
 nav .icons button {
   background: none;
   border-style: none;
-  width: 50px;
-  height: 50px;
-}
-nav .icons button svg {
-  width: 40px;
-}
-nav .icons button svg path {
-  stroke: #7C6A0A;
+  width: 45px;
+  height: 45px;
 }
 
 main {
   width: 100%;
 }
 main h2 {
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 main > section {
+  margin: 0 auto;
   padding: 0 70px;
   width: 100%;
   max-width: 1300px;
 }
 
 .hero {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   padding: 75px 65px 115px;
+  margin: 0 auto;
 }
 .hero .impact-section {
   width: 45%;
 }
 .hero .impact-section h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin: 60px 0;
 }
 .hero .impact-section p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 100px;
 }
 .hero .impact-section button {
   background: #FA9500;
   color: white;
   border: none;
-  width: 260px;
-  height: 75px;
+  width: 240px;
+  height: 70px;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   border-radius: 35px;
   cursor: pointer;
 }
@@ -92,45 +93,58 @@ main > section {
   border-radius: 10px;
 }
 
-.product-section .healthcare .cards-container {
+.product-section .healthcare .cards-container, .product-section .furniture .cards-container {
   margin: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
 }
-.product-section .healthcare .cards-container .card-item {
-  width: 30%;
-  min-width: 324px;
+.product-section .healthcare .cards-container .card-item, .product-section .furniture .cards-container .card-item {
+  width: 26%;
   max-width: 400px;
   background-color: #FFDAC6;
   border-radius: 8px;
 }
-.product-section .healthcare .cards-container .card-item .love-icon {
+.product-section .healthcare .cards-container .card-item .love-icon, .product-section .furniture .cards-container .card-item .love-icon {
   display: flex;
   justify-content: end;
 }
-.product-section .healthcare .cards-container .card-item .love-icon svg {
+.product-section .healthcare .cards-container .card-item .love-icon svg, .product-section .furniture .cards-container .card-item .love-icon svg {
   margin: 10px;
   width: 30px;
 }
-.product-section .healthcare .cards-container .card-item .love-icon svg path {
-  stroke: #7C6A0A;
+.product-section .healthcare .cards-container .card-item .love-icon svg:hover, .product-section .furniture .cards-container .card-item .love-icon svg:hover {
+  fill: #7C6A0A;
 }
-.product-section .healthcare .cards-container .card-item .card-info {
+.product-section .healthcare .cards-container .card-item .card-info, .product-section .furniture .cards-container .card-item .card-info {
   padding: 0 40px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.product-section .healthcare .cards-container .card-item .card-info img {
+.product-section .healthcare .cards-container .card-item .card-info img, .product-section .furniture .cards-container .card-item .card-info img {
   width: 100%;
   border-radius: 6px;
 }
-.product-section .healthcare .cards-container .card-item .card-info .card-description {
+.product-section .healthcare .cards-container .card-item .card-info .card-description, .product-section .furniture .cards-container .card-item .card-info .card-description {
   margin-top: 12px;
 }
-.product-section .healthcare .cards-container .card-item .card-info .card-description h4 {
+.product-section .healthcare .cards-container .card-item .card-info .card-description h4, .product-section .furniture .cards-container .card-item .card-info .card-description h4 {
   font-size: 2.5rem;
 }
-.product-section .healthcare .cards-container .card-item .card-info .card-description p {
+.product-section .healthcare .cards-container .card-item .card-info .card-description p, .product-section .furniture .cards-container .card-item .card-info .card-description p {
   font-size: 1.6rem;
+}
+.product-section .furniture .cards-container .card-item {
+  background-color: #BABD8D;
+  color: white;
+}
+.product-section .furniture .cards-container .card-item .love-icon svg path {
+  stroke: white;
+}
+.product-section .furniture .cards-container .card-item .love-icon svg:hover {
+  fill: white;
 }
 
 footer {
