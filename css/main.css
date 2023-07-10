@@ -15,14 +15,12 @@ body {
   color: #7C6A0A;
   font-family: "IBM Plex Sans", sans-serif;
 }
-body svg path {
-  stroke: #7C6A0A;
-}
 
 nav {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 36px 60px 46px 85px;
 }
@@ -40,7 +38,13 @@ nav .icons button {
   width: 45px;
   height: 45px;
 }
-
+nav .icons svg {
+  width: auto;
+  height: auto;
+}
+nav .icons svg path {
+  stroke: #7C6A0A;
+}
 main {
   width: 100%;
 }
@@ -58,6 +62,7 @@ main > section {
   width: 100%;
   max-width: 1200px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 75px 65px 115px;
   margin: 0 auto;
@@ -96,8 +101,9 @@ main > section {
 .product-section .healthcare .cards-container, .product-section .furniture .cards-container {
   margin: 60px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   row-gap: 40px;
 }
 .product-section .healthcare .cards-container .card-item, .product-section .furniture .cards-container .card-item {
@@ -111,11 +117,17 @@ main > section {
   justify-content: end;
 }
 .product-section .healthcare .cards-container .card-item .love-icon svg, .product-section .furniture .cards-container .card-item .love-icon svg {
-  margin: 10px;
   width: 30px;
+  height: auto;
+}
+.product-section .healthcare .cards-container .card-item .love-icon svg path, .product-section .furniture .cards-container .card-item .love-icon svg path {
+  stroke: #7C6A0A;
 }
 .product-section .healthcare .cards-container .card-item .love-icon svg:hover, .product-section .furniture .cards-container .card-item .love-icon svg:hover {
   fill: #7C6A0A;
+}
+.product-section .healthcare .cards-container .card-item .love-icon svg, .product-section .furniture .cards-container .card-item .love-icon svg {
+  margin: 10px;
 }
 .product-section .healthcare .cards-container .card-item .card-info, .product-section .furniture .cards-container .card-item .card-info {
   padding: 0 40px 50px;
@@ -139,6 +151,10 @@ main > section {
 .product-section .furniture .cards-container .card-item {
   background-color: #BABD8D;
   color: white;
+}
+.product-section .furniture .cards-container .card-item .love-icon svg {
+  width: 30px;
+  height: auto;
 }
 .product-section .furniture .cards-container .card-item .love-icon svg path {
   stroke: white;

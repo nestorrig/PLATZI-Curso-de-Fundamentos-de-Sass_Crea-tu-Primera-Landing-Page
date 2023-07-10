@@ -5,6 +5,23 @@ $primary-text-color:#7C6A0A;
 $quaternary-color:#FA9500;
 $font-stack: 'IBM Plex Sans' , sans-serif;
 
+@mixin flex($direction, $justify: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin svgStyle ($color, $width, $height, $hovercolor: null){
+    svg {
+        width: $width;
+        height: $height;
+        path {
+            stroke: $color; 
+        }
+    }
+    svg:hover {fill: $hovercolor;}
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,13 +36,11 @@ body {
     background-color: $primary-color;
     color: $primary-text-color;
     font-family: $font-stack;
-    svg path {stroke: $primary-text-color;}
 }
 nav {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
+    @include flex(row ,space-between, null);
     padding: 36px 60px 46px 85px;
     p {
         font-size: 3.2rem;
@@ -41,6 +56,7 @@ nav {
             height: 45px;
             
         }
+        @include svgStyle($primary-text-color, auto, auto, null)
     }
 }
 main {
@@ -58,8 +74,7 @@ main {
 .hero {
     width: 100%;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, null);
     padding: 75px 65px 115px;
     margin: 0 auto;
     .impact-section {
@@ -97,9 +112,8 @@ main {
     .healthcare{
         .cards-container {
             margin: 60px 0;
-            display: flex;
+            @include flex(row, space-between, null);
             flex-wrap: wrap;
-            justify-content: space-between;
             row-gap: 40px;
             .card-item {
                 width: 26%;
@@ -109,17 +123,12 @@ main {
                 .love-icon {
                     display: flex;
                     justify-content: end;
-                    svg {
-                        margin: 10px;
-                        width: 30px;
-                    }
-                    svg:hover {fill: $primary-text-color;}
+                    @include svgStyle($primary-text-color, 30px, auto, $primary-text-color);
+                    svg {margin: 10px;}
                 }
                 .card-info{
                     padding: 0 40px 50px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flex(column, null, center);
                     img {
                         width: 100%;
                         border-radius: 6px;
@@ -139,10 +148,7 @@ main {
             background-color: $tertiary-color;
             color: white;
             .love-icon {
-                svg path {
-                    stroke: white;
-                }
-                svg:hover {fill: white;}
+                @include svgStyle(white, 30px, auto, white);
             }
         }
     }
