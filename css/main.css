@@ -50,6 +50,7 @@ main {
 }
 main h2 {
   font-size: 3.6rem;
+  font-weight: 500;
 }
 main > section {
   margin: 0 auto;
@@ -163,32 +164,54 @@ main > section {
   fill: white;
 }
 
-.info-section .about-us .mision-section {
+.info-section .about-us .mission-section {
   padding: 100px 60px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
 }
-.info-section .about-us .mision-section .earth, .info-section .about-us .mision-section .innovation {
+.info-section .about-us .mission-section .earth, .info-section .about-us .mission-section .innovation {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.info-section .about-us .mision-section .earth img, .info-section .about-us .mision-section .innovation img {
+.info-section .about-us .mission-section .earth img, .info-section .about-us .mission-section .innovation img {
   width: 164px;
   height: 164px;
   margin-right: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.info-section .about-us .mision-section .earth p, .info-section .about-us .mision-section .innovation p {
+.info-section .about-us .mission-section .earth p, .info-section .about-us .mission-section .innovation p {
   color: #FA9500;
   font-size: 2.6rem;
   font-weight: 500;
+}
+.info-section .gallery .images-container {
+  padding: 70px 0 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-section .gallery .images-container figure {
+  width: 30%;
+  max-width: 400px;
+  height: 400px;
+}
+.info-section .gallery .images-container figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.info-section .gallery .images-container figure img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 footer {
