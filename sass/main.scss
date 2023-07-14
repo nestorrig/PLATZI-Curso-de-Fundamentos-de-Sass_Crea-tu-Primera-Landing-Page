@@ -198,9 +198,46 @@ main {
             }
         }
     }
+    .location {
+        padding-bottom: 120px;
+        img {
+            width: 100%;
+            margin-top: 70px;
+        }
+        color: $quaternary-color;
+        .reference {
+            margin: 30px 0 10px;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        .direction {
+            margin: 10px 0 30px;
+            font-size: 2.4rem;
+        }
+    }
 }
 footer {
+    padding: 70px 0;
     background-color: $quaternary-color;
+    color: white;
     width: 100%;
-    height: 400px;
+    height: auto;
+    div {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .text {
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+    }
+    .social-media {
+        @include flex(row, center, center);
+        gap: 30px;
+    }
 }

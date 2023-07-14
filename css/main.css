@@ -213,9 +213,47 @@ main > section {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
+.info-section .location {
+  padding-bottom: 120px;
+  color: #FA9500;
+}
+.info-section .location img {
+  width: 100%;
+  margin-top: 70px;
+}
+.info-section .location .reference {
+  margin: 30px 0 10px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.info-section .location .direction {
+  margin: 10px 0 30px;
+  font-size: 2.4rem;
+}
 
 footer {
+  padding: 70px 0;
   background-color: #FA9500;
+  color: white;
   width: 100%;
-  height: 400px;
+  height: auto;
+}
+footer div {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+footer .text h3 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+footer .text p {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
