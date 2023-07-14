@@ -153,6 +153,31 @@ main {
         }
     }
 }
+
+.info-section {
+    .about-us{
+        .mision-section {
+            padding: 100px 60px;
+            @include flex(row, center, center);
+            gap: 50px;
+            .earth, .innovation {
+                width: 50%;
+                @include flex(row, center, center);
+                img {
+                    width: 164px;
+                    height: 164px;
+                    margin-right: 20px;
+                    object-fit: cover;
+                }
+                p {
+                    color: $quaternary-color;
+                    font-size: 2.6rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
 footer {
     background-color: $quaternary-color;
     width: 100%;

@@ -163,6 +163,34 @@ main > section {
   fill: white;
 }
 
+.info-section .about-us .mision-section {
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.info-section .about-us .mision-section .earth, .info-section .about-us .mision-section .innovation {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.info-section .about-us .mision-section .earth img, .info-section .about-us .mision-section .innovation img {
+  width: 164px;
+  height: 164px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info-section .about-us .mision-section .earth p, .info-section .about-us .mision-section .innovation p {
+  color: #FA9500;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;
